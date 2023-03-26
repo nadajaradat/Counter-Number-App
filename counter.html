@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Number App</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            width: 100%;
+            height: 100vh;
+            
+        }
+        .counter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            background-color: #a3c7a4;
+            padding: 10px;
+            
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 0;
+            background-color: #4E8151;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+            transition: .4s;
+
+        }
+        button:hover{
+            background-color:#416b44;
+            
+        }
+        .display{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #C7AB85;
+            width: 200px;
+            height: 50px;
+
+            border-radius: 10px;
+            margin: 30px;
+            font-size: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--we have three buttuns 1.increase  2.reset  3. decrease  -->
+    <div class="container">
+        <div class="counter">
+            <h2 style="color: #4E8151;">Counter</h2>
+            <div class="display" id = "display">0</div>
+            <div class = "btns">
+                <button class = "increase" onclick="increase()">increase</button>
+                <button class = "reset" onclick="reset()">reset</button>
+                <button class = "decrease" onclick="decrease()">decrease</button>
+            </div>
+            
+    
+        </div>
+    </div>
+    
+    <script src="counter.js"></script>
+</body>
+</html>
